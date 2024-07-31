@@ -97,10 +97,12 @@ function Signin() {
               Sign Up
             </Link>
           </div>
-          {errorMessage && (
+          {errorMessage ? (
             <Alert className="mt-5" color="failure">
               {errorMessage}
             </Alert>
+          ) : (
+            <div></div>
           )}
         </div>
       </div>
